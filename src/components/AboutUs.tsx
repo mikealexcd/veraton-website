@@ -8,12 +8,12 @@ export default function AboutUs() {
   const teamMembers = [
     {
       name: 'Elizabeth',
-      role: 'Design Lead',
+      role: 'Product Designer',
       description: 'Turning complex problems into delightful experiences is my superpower! ✨',
       avatar: Elizabeth,
       color: 'bg-accent-lavender',
       borderColor: 'border-accent-pink',
-      interests: ['Design Systems', 'User Psychology', 'Ice Cream 🍦']
+      interests: ['Design Systems', 'User Psychology', 'Coffee ☕']
     },
     {
       name: 'Stacey',
@@ -22,7 +22,7 @@ export default function AboutUs() {
       avatar: Stacey,
       color: 'bg-primary-light/10',
       borderColor: 'border-primary-light',
-      interests: ['User Interviews', 'Data Analysis', 'Coffee ☕']
+      interests: ['User Interviews', 'Data Analysis', 'Matcha 🍵']
     }
   ];
 
@@ -65,8 +65,8 @@ export default function AboutUs() {
 
                   <div className="text-center space-y-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-primary">{member.name}</h3>
-                      <p className="text-accent-yellow font-medium">{member.role}</p>
+                      <h3 className="text-3xl font-bold text-primary">{member.name}</h3>
+                      <p className="text-xl text-accent-yellow font-medium">{member.role}</p>
                     </div>
                     <p className="text-primary-light">{member.description}</p>
                     
@@ -90,7 +90,7 @@ export default function AboutUs() {
           </div>
 
           <div className="mt-16 text-center">
-            <p className="text-xl text-primary-light italic">
+            <p className="text-xl text-primary-light">
               &ldquo;We believe great UX should bring a smile to everyone&apos;s face! 😊&rdquo;
             </p>
           </div>

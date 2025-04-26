@@ -65,7 +65,7 @@ export default function ContactForm() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="py-3 px-4 block w-full shadow-sm border-[#8390FA] focus:ring-[#FAC748] focus:border-[#FAC748] border-2 rounded-md bg-white/50"
+                  className="py-3 px-4 block w-full shadow-sm border-[#8390FA] focus:ring-[#FAC748] focus:border-[#FAC748] border-2 rounded-md bg-white/50 text-[#1D2F6F] placeholder:text-[#1D2F6F]/60"
                 />
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="py-3 px-4 block w-full shadow-sm border-[#8390FA] focus:ring-[#FAC748] focus:border-[#FAC748] border-2 rounded-md bg-white/50"
+                  className="py-3 px-4 block w-full shadow-sm border-[#8390FA] focus:ring-[#FAC748] focus:border-[#FAC748] border-2 rounded-md bg-white/50 text-[#1D2F6F] placeholder:text-[#1D2F6F]/60"
                 />
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function ContactForm() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="py-3 px-4 block w-full shadow-sm border-[#8390FA] focus:ring-[#FAC748] focus:border-[#FAC748] border-2 rounded-md bg-white/50"
+                  className="py-3 px-4 block w-full shadow-sm border-[#8390FA] focus:ring-[#FAC748] focus:border-[#FAC748] border-2 rounded-md bg-white/50 text-[#1D2F6F] placeholder:text-[#1D2F6F]/60"
                 />
               </div>
             </div>
