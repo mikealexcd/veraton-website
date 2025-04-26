@@ -30,6 +30,7 @@ export default function ContactForm() {
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('Error submitting form:', error);
       setStatus('error');
     }
   };
