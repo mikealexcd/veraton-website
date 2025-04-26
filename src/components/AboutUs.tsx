@@ -32,7 +32,7 @@ export default function AboutUs() {
         <div className="text-center">
           <h2 className="text-base text-primary font-semibold tracking-wide uppercase">About Us</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-primary sm:text-4xl">
-            Meet Your UX Superheroes!
+            Met in corporate, decided to break free 😹
           </p>
           <p className="mt-4 max-w-2xl text-xl text-primary-light lg:mx-auto">
             We&apos;re not your typical design team. We bring personality, creativity, and a dash of fun to every project!
