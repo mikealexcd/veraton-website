@@ -46,7 +46,7 @@ export default function Hero() {
           sizes='(50vw)'
           width={720}
           height={502}
-          
+          priority
           alt=""
         />
       </div>
