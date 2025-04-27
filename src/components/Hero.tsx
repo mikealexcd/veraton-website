@@ -42,9 +42,10 @@ export default function Hero() {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-          width={2850}
-          height={1800}
+          src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1425&q=80"
+          sizes='(50vw)'
+          width={720}
+          height={502}
           
           alt=""
         />
