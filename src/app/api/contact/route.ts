@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -13,19 +15,10 @@ export async function POST(request: Request) {
       );
     }
 
-    // Create a transporter using environment variables
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
-
-    // Email content
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.ADMIN_EMAIL,
+    // Send email using Resend
+    await resend.emails.send({
+      from: 'Veraton <onboarding@resend.dev>',
+      to: process.env.ADMIN_EMAIL || '',
       subject: `New Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
@@ -39,10 +32,7 @@ export async function POST(request: Request) {
         <p><strong>Message:</strong></p>
         <p>${message}</p>
       `,
-    };
-
-    // Send the email
-    await transporter.sendMail(mailOptions);
+    });
 
     return NextResponse.json(
       { message: 'Email sent successfully' },
