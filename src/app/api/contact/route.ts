@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     // Send email using Resend
     await resend.emails.send({
-      from: 'Veraton <onboarding@resend.dev>',
+      from: 'Veraton <send@updates.miguel-ceja.com>',
       to: process.env.ADMIN_EMAIL || '',
       subject: `New Contact Form Submission from ${name}`,
       text: `
